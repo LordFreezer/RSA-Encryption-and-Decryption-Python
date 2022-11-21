@@ -24,8 +24,8 @@ def modInverse (a, m):
         return inv
 
 def encrypt(message, public_key):
-    p, m = public_key
-    return message**p % m
+    p, n = public_key
+    return message**p % n
     
 def decrypt(message, n, private_key):
     d = private_key
